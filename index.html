@@ -11,6 +11,25 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet" /> -->
+
+    <style>
+      @font-face {
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 100 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(assets/fonts/Roboto\ V.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
@@ -19,16 +38,19 @@
       <picture class="section__hero__img">
         <source
           media="(min-width: 1000px)"
-          srcset="/public/Hero-Desktop-1x.webp
-          /public/Hero Desktop 2x.webp 2x " />
-
+          srcset="
+            /public/Hero-Desktop-1x.webp 1x,
+            /public/Hero-Desktop-2x.webp 2x
+          " />
+        <div class="hero__image">
         <img
           src="/public/Hero_Mobile_1x.webp"
           alt="Woman sitting in front of laptop and drinking coffee"
           srcset="/public/Hero_Mobile_2x.webp 2x" />
       </picture>
+      </div>
       <div class="hero__content">
-        <h1 class="hero__content-heading">Stay updated!</h1>
+        <h1 class="hero__content-heading heading__primary">Stay updated!</h1>
         <p class="hero__content-text">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
