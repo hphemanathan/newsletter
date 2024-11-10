@@ -1,10 +1,12 @@
 body {
   font-family: "Roboto Flex";
   font-size: var(--font-s-body);
-  color: var(--bg-color--darker);
+  color: var(--body-color);
   background-color: var(--bg-color--dark);
   // background-color: red;
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
   // border: 5px solid var(--bg-color--dark);
 }

@@ -1,14 +1,25 @@
 .btn {
-  display: inline-block;
-  //   background-color: var(--blue-dark);
-  //   color: var(--white);
-  padding-inline: var(--32px);
+  // display: inline-block;
+  background-color: var(--bg-color--darker);
 
-  padding-block: var(--14px);
+  background-size: 350%;
+
+  width: clamp(327px, 100%, 376px);
+  color: var(--bg-color-);
+  border: none;
+  outline: 1px solid var(--bg-color--darker);
+  outline-color: transparent;
+  border-radius: 0.5rem;
+  padding-block: calc(var(--spacing) * 2);
   text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  // background-position: left;
+  // transition: background-position 1s;
 
-  border-radius: var(--28px);
-  text-decoration: none;
-
-  //   font-weight:
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(#ff6a3a, #ff527b);
+    // background-position: right;
+  }
 }

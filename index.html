@@ -35,31 +35,48 @@
   <body>
     <!-- Sign-up form start -->
     <main class="container">
-      <picture class="section__hero__img">
+      <picture class="hero__img">
         <source
-          media="(min-width: 1000px)"
+          media="(min-width: 1008px)"
           srcset="
             /public/Hero-Desktop-1x.webp 1x,
             /public/Hero-Desktop-2x.webp 2x
           " />
-        <div class="hero__image">
         <img
           src="/public/Hero_Mobile_1x.webp"
           alt="Woman sitting in front of laptop and drinking coffee"
           srcset="/public/Hero_Mobile_2x.webp 2x" />
       </picture>
-      </div>
       <div class="hero__content">
-        <h1 class="hero__content-heading heading__primary">Stay updated!</h1>
-        <p class="hero__content-text">
+        <h1 class="hero__content__heading heading__primary">Stay updated!</h1>
+        <p class="hero__content__text">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
-        <ul class="hero__content-points">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+        <ul class="hero__content__points">
+          <li class="hero__content__point">
+            <img src="./assets/images/icon-list.svg" alt="Tick Mark" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="hero__content__point">
+            <img src="./assets/images/icon-list.svg" alt="Tick Mark" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="hero__content__point">
+            <img src="./assets/images/icon-list.svg" alt="Tick Mark" />
+            <p>And much more!</p>
+          </li>
         </ul>
-        Email address email@company.com Subscribe to monthly newsletter
+        <label class="hero__content__label" for="email"> Email address</label
+        ><br />
+        <input
+          class="hero__content__input"
+          type="email"
+          id="email"
+          required
+          placeholder="email@company.com" />
+        <button class="hero__content__btn btn">
+          Subscribe to monthly newsletter
+        </button>
       </div>
     </main>
 
@@ -67,13 +84,24 @@
 
     <!-- Success message start -->
     <div class="success">
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
+      <div class="success__wrapper">
+        <div class="success__img">
+          <img src="./assets/images/icon-success.svg" alt="Tick mark" />
+        </div>
+        <h1 class="success__heading heading__primary">
+          Thanks for subscribing!
+        </h1>
+        <p class="success__text">
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <button class="success__btn btn">Dismiss message</button>
+      </div>
     </div>
 
     <!-- Success message end -->
-
+    <script type="module" src="/index.js"></script>
     <script type="module" src="/main.js"></script>
     <!-- <script type="module" src="/index.js"></script> -->
   </body>
