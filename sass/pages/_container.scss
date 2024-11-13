@@ -78,6 +78,24 @@
     font-size: var(--font-s-body-sm);
     font-weight: bold;
     margin-block-end: var(--spacing);
+
+    &:not(:first-child) {
+      display: none;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-empty {
+      display: none;
+    }
+
+    &-error {
+      display: none;
+      // margin-left: auto;
+    }
   }
 
   &__input {

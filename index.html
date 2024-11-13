@@ -66,8 +66,15 @@
             <p>And much more!</p>
           </li>
         </ul>
-        <label class="hero__content__label" for="email"> Email address</label
-        ><br />
+        <div class="hero__content__label-wrapper">
+          <label class="hero__content__label" for="email"> Email address</label>
+          <label class="hero__content__label-empty" for="email">
+            Enter the email address</label
+          ><label class="hero__content__label-error" for="email">
+            Valid email required</label
+          >
+        </div>
+        <!-- <br /> -->
         <input
           class="hero__content__input"
           type="email"
