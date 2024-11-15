@@ -11,6 +11,10 @@
 
   width: (375px);
 
+  &.active {
+    display: none;
+  }
+
   @include desktop {
     display: flex;
     // display: NONE;
@@ -90,11 +94,24 @@
 
     &-empty {
       display: none;
+
+      &.active {
+        display: block;
+        font-size: var(--font-s-body-sm);
+        font-weight: bold;
+        color: var(--err-t-color);
+      }
     }
 
     &-error {
       display: none;
-      // margin-left: auto;
+
+      &.active {
+        display: block;
+        font-size: var(--font-s-body-sm);
+        font-weight: bold;
+        color: var(--err-t-color);
+      }
     }
   }
 
@@ -108,6 +125,11 @@
     border: none;
     outline: 1px solid gray;
     border-radius: 0.5rem;
+
+    &.active {
+      background-color: var(--err-bg-color);
+      outline: 1px solid var(--err-t-color);
+    }
 
     &:hover,
     &:active {
@@ -131,6 +153,10 @@
   margin-inline: auto;
   background-color: var(--bg-color-);
   border-radius: 1rem;
+
+  &.active {
+    display: block;
+  }
 
   &__wrapper {
     padding-inline: min(6vw, calc(var(--spacing) * 8));
